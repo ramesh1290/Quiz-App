@@ -124,6 +124,15 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,55,121,1) 34%, rgba
   </div>
 
   <script>
+    
+    function shuffleArray(arr) {
+      for (let i = arr.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [arr[i], arr[j]] = [arr[j], arr[i]]
+        
+      }
+      return arr;
+    }
     const questions = [
       {
         question: 'Which is the largest animal in the world?',
